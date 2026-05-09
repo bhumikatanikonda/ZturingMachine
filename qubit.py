@@ -143,7 +143,7 @@ class VirtualQubit:
         result = qt.mesolve(H, self.state, t, c_ops=c_ops, e_ops=[])
         self.state = result.states[-1]
 
-    def wait(self, duration: float, n_steps: int = _WAIT_STEPS) -> None:
+    def wait(self,  drive_freq, duration: float, n_steps: int = _WAIT_STEPS) -> None:
         """Let the qubit decay freely for ``duration`` seconds under zero drive.
 
         No pulse is applied — only the T1 and T2 Lindblad channels act.  This
@@ -159,10 +159,8 @@ class VirtualQubit:
                       default of 200 is sufficient for durations up to ~T1.
         """
         t = np.linspace(0, duration, n_steps)
-        H_zero = qt.Qobj(np.zeros((2, 2)))
-        c_ops = self.collapse_operators()
-        result = qt.mesolve(H_zero, self.state, t, c_ops=c_ops, e_ops=[])
-        self.state = result.states[-1]
+        self.evolve(t, np.zeros_like(t), drive_freq=drive_freq)
+        return self.state
 
     # ------------------------------------------------------------------
     # Measurement
