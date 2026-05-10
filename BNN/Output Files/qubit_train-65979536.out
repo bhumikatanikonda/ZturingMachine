@@ -1,0 +1,86 @@
+Job started: Sun May 10 01:33:18 AM CEST 2026
+Running on node: eu-a2p-341
+CPUs allocated: 8
+Starting ensemble training...
+Loading dataset_10k_v2.npz ...
+  features: (10000, 55), labels: (10000, 4)
+  split: 8000 train / 1000 val / 1000 test
+  device: cpu
+
+=== Member 1/5 ===
+    epoch  10  val NLL = -0.0396  (best -0.0396)
+    epoch  20  val NLL = -0.1540  (best -0.1540)
+    epoch  30  val NLL = -0.1953  (best -0.2411)
+    epoch  40  val NLL = -0.2575  (best -0.2837)
+    epoch  50  val NLL = -0.2139  (best -0.2837)
+    epoch  60  val NLL = -0.2677  (best -0.2866)
+    epoch  70  val NLL = -0.2322  (best -0.2866)
+    epoch  80  val NLL = -0.1798  (best -0.2866)
+    epoch  90  val NLL = -0.0400  (best -0.2866)
+    early stop @ epoch 92  (best val NLL = -0.2866)
+
+=== Member 2/5 ===
+    epoch  10  val NLL = 0.0008  (best -0.0291)
+    epoch  20  val NLL = -0.1835  (best -0.1835)
+    epoch  30  val NLL = -0.2298  (best -0.2311)
+    epoch  40  val NLL = -0.2775  (best -0.2872)
+    epoch  50  val NLL = -0.2538  (best -0.3074)
+    epoch  60  val NLL = -0.3068  (best -0.3074)
+    epoch  70  val NLL = -0.2228  (best -0.3074)
+    epoch  80  val NLL = -0.2053  (best -0.3074)
+    early stop @ epoch 85  (best val NLL = -0.3074)
+
+=== Member 3/5 ===
+    epoch  10  val NLL = -0.0498  (best -0.0498)
+    epoch  20  val NLL = -0.1816  (best -0.1816)
+    epoch  30  val NLL = -0.2477  (best -0.2477)
+    epoch  40  val NLL = -0.2760  (best -0.2832)
+    epoch  50  val NLL = -0.2491  (best -0.3207)
+    epoch  60  val NLL = -0.2937  (best -0.3207)
+    epoch  70  val NLL = -0.1273  (best -0.3207)
+    epoch  80  val NLL = -0.1082  (best -0.3207)
+    early stop @ epoch 88  (best val NLL = -0.3207)
+
+=== Member 4/5 ===
+    epoch  10  val NLL = -0.0435  (best -0.0435)
+    epoch  20  val NLL = -0.1430  (best -0.1430)
+    epoch  30  val NLL = -0.2341  (best -0.2366)
+    epoch  40  val NLL = -0.2602  (best -0.2821)
+    epoch  50  val NLL = -0.2951  (best -0.3038)
+    epoch  60  val NLL = -0.2384  (best -0.3038)
+    epoch  70  val NLL = -0.2387  (best -0.3059)
+    epoch  80  val NLL = -0.1909  (best -0.3059)
+    epoch  90  val NLL = -0.1835  (best -0.3059)
+    epoch 100  val NLL = 0.0922  (best -0.3059)
+    early stop @ epoch 102  (best val NLL = -0.3059)
+
+=== Member 5/5 ===
+    epoch  10  val NLL = 0.0318  (best 0.0024)
+    epoch  20  val NLL = -0.1354  (best -0.1426)
+    epoch  30  val NLL = -0.1859  (best -0.2399)
+    epoch  40  val NLL = -0.2868  (best -0.2868)
+    epoch  50  val NLL = -0.2799  (best -0.2868)
+    epoch  60  val NLL = -0.1517  (best -0.3198)
+    epoch  70  val NLL = -0.2137  (best -0.3198)
+    epoch  80  val NLL = -0.2405  (best -0.3198)
+    epoch  90  val NLL = 0.0274  (best -0.3198)
+    early stop @ epoch 92  (best val NLL = -0.3198)
+
+======================================================================
+  Test-set evaluation  (mixture-of-Gaussians ensemble)
+======================================================================
+  Param              MAE          RMSE   cov(1σ)   cov(2σ)
+  --------                                                
+  f_q         0.0448 GHz    0.0977 GHz    76.3%    98.1%
+  T1          0.0000 µs    0.0000 µs    61.9%    97.4%
+  T2          0.0000 µs    0.0000 µs    55.9%    99.7%
+  amp_pi      0.0217  -     0.0283  -     63.6%    97.5%
+
+  Calibration warnings:
+  [WARN] T2: 1σ coverage 55.9% (target 68%)
+  (Re-fit with more training data, more ensemble members, or longer training to improve calibration.)
+======================================================================
+
+Saved 5 members + norm_stats + sweep_grids to models_10k_v2
+Training finished: Sun May 10 01:35:53 AM CEST 2026
+SUCCESS: models_10k_2/ created

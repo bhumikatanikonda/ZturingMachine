@@ -1,0 +1,259 @@
+Inference started: Sun May 10 01:58:20 AM CEST 2026
+Running on node: eu-a2p-532
+Starting inference for multiple seeds...
+Model directory: models_10k_v2
+----------------------------------------------------------------------
+Processing SEED: 10001
+Loaded 5 ensemble members from models_10k_v2.
+Compiling LabOne Q waveforms (one-time)...
+[2026.05.10 01:58:30.230] INFO    Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /cluster/home/fiwagner/QHackathon/laboneq_output/log
+[2026.05.10 01:58:30.233] INFO    VERSION: laboneq 26.4.0
+[2026.05.10 01:58:30.234] INFO    Connecting to data server at localhost:8004
+[2026.05.10 01:58:30.235] INFO    Connected to Zurich Instruments LabOne Data Server version 26.04.0.940 at localhost:8004
+[2026.05.10 01:58:30.239] INFO    Configuring the device setup
+[2026.05.10 01:58:30.268] INFO    The device setup is configured
+[2026.05.10 01:58:30.289] INFO    Starting LabOne Q Compiler run...
+[2026.05.10 01:58:30.290] INFO    Schedule completed. [0.000 s]
+[2026.05.10 01:58:30.297] INFO    Code generation completed for all AWGs. [0.007 s]
+[2026.05.10 01:58:30.297] INFO    Completed compilation step 1 of 1. [0.008 s]
+[2026.05.10 01:58:30.305] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:30.306] INFO      Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+[2026.05.10 01:58:30.306] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:30.306] INFO      shfqc_0_sg     0          9            2           1      8000  
+[2026.05.10 01:58:30.306] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:30.306] INFO      TOTAL                     9            2                  8000  
+[2026.05.10 01:58:30.306] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:30.316] INFO    Finished LabOne Q Compiler run.
+[2026.05.10 01:58:30.320] INFO    Starting LabOne Q Compiler run...
+[2026.05.10 01:58:30.321] INFO    Schedule completed. [0.000 s]
+[2026.05.10 01:58:30.321] INFO    Code generation completed for all AWGs. [0.001 s]
+[2026.05.10 01:58:30.321] INFO    Completed compilation step 1 of 1. [0.001 s]
+[2026.05.10 01:58:30.325] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:30.325] INFO      Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+[2026.05.10 01:58:30.325] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:30.325] INFO      shfqc_0_sg     0          9            2           1       416  
+[2026.05.10 01:58:30.325] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:30.325] INFO      TOTAL                     9            2                   416  
+[2026.05.10 01:58:30.325] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:30.330] INFO    Finished LabOne Q Compiler run.
+[2026.05.10 01:58:30.332] INFO    Disconnecting from all devices and servers...
+[2026.05.10 01:58:30.332] INFO    Successfully disconnected from all devices and servers.
+Probing VirtualQubit(seed=10001) ...
+
+Parameter Predicted               Uncertainty (1σ)      
+─────────────────────────────────────────────────────────────────
+f_q           5.716988 GHz         ±   0.006595 GHz
+T1           29.384644 µs          ±   1.689546 µs
+T2           19.814207 µs          ±   2.900724 µs
+amp_π         0.627887             ±   0.008552   
+
+  Uncertainty decomposition (1σ contributions):
+  param     aleatoric       epistemic       
+  f_q         0.005617 GHz    0.003456 GHz
+  T1          1.598086 µs     0.548347 µs
+  T2          2.899087 µs     0.097443 µs
+  amp_π       0.007781        0.003548   
+
+[FLAG] Parameters with σ/|μ| > 5% — recommend a full sweep:
+  • T1: relative σ = 5.75%
+  • T2: relative σ = 14.64%
+
+Parameter True                    Abs error             
+─────────────────────────────────────────────────────────────────
+f_q           5.714806 GHz             0.002181 GHz
+T1           32.589405 µs              3.204761 µs
+T2           18.384849 µs              1.429358 µs
+amp_π         0.644580                 0.016693   
+----------------------------------------------------------------------
+Processing SEED: 10002
+Loaded 5 ensemble members from models_10k_v2.
+Compiling LabOne Q waveforms (one-time)...
+[2026.05.10 01:58:38.830] INFO    Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /cluster/home/fiwagner/QHackathon/laboneq_output/log
+[2026.05.10 01:58:38.832] INFO    VERSION: laboneq 26.4.0
+[2026.05.10 01:58:38.833] INFO    Connecting to data server at localhost:8004
+[2026.05.10 01:58:38.834] INFO    Connected to Zurich Instruments LabOne Data Server version 26.04.0.940 at localhost:8004
+[2026.05.10 01:58:38.837] INFO    Configuring the device setup
+[2026.05.10 01:58:38.865] INFO    The device setup is configured
+[2026.05.10 01:58:38.884] INFO    Starting LabOne Q Compiler run...
+[2026.05.10 01:58:38.885] INFO    Schedule completed. [0.000 s]
+[2026.05.10 01:58:38.891] INFO    Code generation completed for all AWGs. [0.006 s]
+[2026.05.10 01:58:38.892] INFO    Completed compilation step 1 of 1. [0.007 s]
+[2026.05.10 01:58:38.898] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:38.898] INFO      Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+[2026.05.10 01:58:38.898] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:38.898] INFO      shfqc_0_sg     0          9            2           1      8000  
+[2026.05.10 01:58:38.898] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:38.898] INFO      TOTAL                     9            2                  8000  
+[2026.05.10 01:58:38.898] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:38.906] INFO    Finished LabOne Q Compiler run.
+[2026.05.10 01:58:38.910] INFO    Starting LabOne Q Compiler run...
+[2026.05.10 01:58:38.910] INFO    Schedule completed. [0.000 s]
+[2026.05.10 01:58:38.911] INFO    Code generation completed for all AWGs. [0.001 s]
+[2026.05.10 01:58:38.911] INFO    Completed compilation step 1 of 1. [0.001 s]
+[2026.05.10 01:58:38.914] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:38.914] INFO      Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+[2026.05.10 01:58:38.914] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:38.914] INFO      shfqc_0_sg     0          9            2           1       416  
+[2026.05.10 01:58:38.914] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:38.914] INFO      TOTAL                     9            2                   416  
+[2026.05.10 01:58:38.914] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:38.919] INFO    Finished LabOne Q Compiler run.
+[2026.05.10 01:58:38.920] INFO    Disconnecting from all devices and servers...
+[2026.05.10 01:58:38.921] INFO    Successfully disconnected from all devices and servers.
+Probing VirtualQubit(seed=10002) ...
+
+Parameter Predicted               Uncertainty (1σ)      
+─────────────────────────────────────────────────────────────────
+f_q           5.671815 GHz         ±   0.094780 GHz
+T1           24.711799 µs          ±   2.093920 µs
+T2           19.886895 µs          ±   2.677141 µs
+amp_π         0.682495             ±   0.009916   
+
+  Uncertainty decomposition (1σ contributions):
+  param     aleatoric       epistemic       
+  f_q         0.089326 GHz    0.031689 GHz
+  T1          2.001527 µs     0.615138 µs
+  T2          2.663959 µs     0.265344 µs
+  amp_π       0.009559        0.002638   
+
+[FLAG] Parameters with σ/|μ| > 5% — recommend a full sweep:
+  • T1: relative σ = 8.47%
+  • T2: relative σ = 13.46%
+
+Parameter True                    Abs error             
+─────────────────────────────────────────────────────────────────
+f_q           5.635186 GHz             0.036629 GHz
+T1           25.000299 µs              0.288500 µs
+T2           20.494202 µs              0.607307 µs
+amp_π         0.695412                 0.012917   
+----------------------------------------------------------------------
+Processing SEED: 10003
+Loaded 5 ensemble members from models_10k_v2.
+Compiling LabOne Q waveforms (one-time)...
+[2026.05.10 01:58:47.414] INFO    Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /cluster/home/fiwagner/QHackathon/laboneq_output/log
+[2026.05.10 01:58:47.416] INFO    VERSION: laboneq 26.4.0
+[2026.05.10 01:58:47.417] INFO    Connecting to data server at localhost:8004
+[2026.05.10 01:58:47.418] INFO    Connected to Zurich Instruments LabOne Data Server version 26.04.0.940 at localhost:8004
+[2026.05.10 01:58:47.421] INFO    Configuring the device setup
+[2026.05.10 01:58:47.450] INFO    The device setup is configured
+[2026.05.10 01:58:47.467] INFO    Starting LabOne Q Compiler run...
+[2026.05.10 01:58:47.468] INFO    Schedule completed. [0.000 s]
+[2026.05.10 01:58:47.474] INFO    Code generation completed for all AWGs. [0.006 s]
+[2026.05.10 01:58:47.474] INFO    Completed compilation step 1 of 1. [0.006 s]
+[2026.05.10 01:58:47.481] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:47.481] INFO      Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+[2026.05.10 01:58:47.481] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:47.481] INFO      shfqc_0_sg     0          9            2           1      8000  
+[2026.05.10 01:58:47.481] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:47.481] INFO      TOTAL                     9            2                  8000  
+[2026.05.10 01:58:47.481] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:47.489] INFO    Finished LabOne Q Compiler run.
+[2026.05.10 01:58:47.492] INFO    Starting LabOne Q Compiler run...
+[2026.05.10 01:58:47.493] INFO    Schedule completed. [0.000 s]
+[2026.05.10 01:58:47.493] INFO    Code generation completed for all AWGs. [0.000 s]
+[2026.05.10 01:58:47.493] INFO    Completed compilation step 1 of 1. [0.001 s]
+[2026.05.10 01:58:47.496] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:47.496] INFO      Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+[2026.05.10 01:58:47.496] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:47.496] INFO      shfqc_0_sg     0          9            2           1       416  
+[2026.05.10 01:58:47.496] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:47.496] INFO      TOTAL                     9            2                   416  
+[2026.05.10 01:58:47.496] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:47.500] INFO    Finished LabOne Q Compiler run.
+[2026.05.10 01:58:47.501] INFO    Disconnecting from all devices and servers...
+[2026.05.10 01:58:47.502] INFO    Successfully disconnected from all devices and servers.
+Probing VirtualQubit(seed=10003) ...
+
+Parameter Predicted               Uncertainty (1σ)      
+─────────────────────────────────────────────────────────────────
+f_q           5.899340 GHz         ±   0.079912 GHz
+T1           30.065287 µs          ±   6.361596 µs
+T2           20.550790 µs          ±   2.973250 µs
+amp_π         0.646853             ±   0.038081   
+
+  Uncertainty decomposition (1σ contributions):
+  param     aleatoric       epistemic       
+  f_q         0.058804 GHz    0.054110 GHz
+  T1          6.314640 µs     0.771509 µs
+  T2          2.968206 µs     0.173118 µs
+  amp_π       0.036842        0.009636   
+
+[FLAG] Parameters with σ/|μ| > 5% — recommend a full sweep:
+  • T1: relative σ = 21.16%
+  • T2: relative σ = 14.47%
+  • amp_π: relative σ = 5.89%
+
+[NOTE] Prior-boundary effects (Gaussian assumption may break):
+  • f_q: μ ± 1.5σ crosses prior bound [5.000, 6.000] GHz
+  • T2: μ ± 1.5σ crosses prior bound [15.000, 25.000] µs
+
+Parameter True                    Abs error             
+─────────────────────────────────────────────────────────────────
+f_q           5.688162 GHz             0.211179 GHz
+T1           34.762485 µs              4.697198 µs
+T2           24.980626 µs              4.429836 µs
+amp_π         0.660557                 0.013704   
+----------------------------------------------------------------------
+Processing SEED: 12345
+Loaded 5 ensemble members from models_10k_v2.
+Compiling LabOne Q waveforms (one-time)...
+[2026.05.10 01:58:56.638] INFO    Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /cluster/home/fiwagner/QHackathon/laboneq_output/log
+[2026.05.10 01:58:56.639] INFO    VERSION: laboneq 26.4.0
+[2026.05.10 01:58:56.640] INFO    Connecting to data server at localhost:8004
+[2026.05.10 01:58:56.641] INFO    Connected to Zurich Instruments LabOne Data Server version 26.04.0.940 at localhost:8004
+[2026.05.10 01:58:56.644] INFO    Configuring the device setup
+[2026.05.10 01:58:56.671] INFO    The device setup is configured
+[2026.05.10 01:58:56.690] INFO    Starting LabOne Q Compiler run...
+[2026.05.10 01:58:56.691] INFO    Schedule completed. [0.000 s]
+[2026.05.10 01:58:56.698] INFO    Code generation completed for all AWGs. [0.007 s]
+[2026.05.10 01:58:56.698] INFO    Completed compilation step 1 of 1. [0.008 s]
+[2026.05.10 01:58:56.705] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:56.705] INFO      Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+[2026.05.10 01:58:56.705] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:56.705] INFO      shfqc_0_sg     0          9            2           1      8000  
+[2026.05.10 01:58:56.705] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:56.705] INFO      TOTAL                     9            2                  8000  
+[2026.05.10 01:58:56.705] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:56.714] INFO    Finished LabOne Q Compiler run.
+[2026.05.10 01:58:56.718] INFO    Starting LabOne Q Compiler run...
+[2026.05.10 01:58:56.718] INFO    Schedule completed. [0.000 s]
+[2026.05.10 01:58:56.719] INFO    Code generation completed for all AWGs. [0.001 s]
+[2026.05.10 01:58:56.719] INFO    Completed compilation step 1 of 1. [0.001 s]
+[2026.05.10 01:58:56.722] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:56.722] INFO      Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+[2026.05.10 01:58:56.722] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:56.722] INFO      shfqc_0_sg     0          9            2           1       416  
+[2026.05.10 01:58:56.722] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:56.722] INFO      TOTAL                     9            2                   416  
+[2026.05.10 01:58:56.722] INFO     ──────────────────────────────────────────────────────────────── 
+[2026.05.10 01:58:56.727] INFO    Finished LabOne Q Compiler run.
+[2026.05.10 01:58:56.729] INFO    Disconnecting from all devices and servers...
+[2026.05.10 01:58:56.729] INFO    Successfully disconnected from all devices and servers.
+Probing VirtualQubit(seed=12345) ...
+
+Parameter Predicted               Uncertainty (1σ)      
+─────────────────────────────────────────────────────────────────
+f_q           5.224199 GHz         ±   0.012184 GHz
+T1           32.235525 µs          ±   4.429157 µs
+T2           19.795357 µs          ±   2.802452 µs
+amp_π         0.623131             ±   0.022914   
+
+  Uncertainty decomposition (1σ contributions):
+  param     aleatoric       epistemic       
+  f_q         0.011646 GHz    0.003582 GHz
+  T1          4.391156 µs     0.578943 µs
+  T2          2.797992 µs     0.158037 µs
+  amp_π       0.022828        0.001981   
+
+[FLAG] Parameters with σ/|μ| > 5% — recommend a full sweep:
+  • T1: relative σ = 13.74%
+  • T2: relative σ = 14.16%
+
+Parameter True                    Abs error             
+─────────────────────────────────────────────────────────────────
+f_q           5.227336 GHz             0.003137 GHz
+T1           26.335167 µs              5.900359 µs
+T2           22.973655 µs              3.178298 µs
+amp_π         0.605650                 0.017481   
+----------------------------------------------------------------------
+Inference finished: Sun May 10 01:59:00 AM CEST 2026

@@ -1,0 +1,320 @@
+2026.05.10 00:47:07.761 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /cluster/home/fiwagner/QHackathon/laboneq_output/log
+2026.05.10 00:47:07.764 | laboneq.controller.controller                 | INFO   VERSION: laboneq 26.4.0
+2026.05.10 00:47:07.765 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at localhost:8004
+2026.05.10 00:47:07.767 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 26.04.0.940 at localhost:8004
+2026.05.10 00:47:07.770 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2026.05.10 00:47:07.799 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2026.05.10 00:47:07.822 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 00:47:07.839 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.001 s]
+2026.05.10 00:47:07.863 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.024 s]
+2026.05.10 00:47:07.863 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.026 s]
+2026.05.10 00:47:07.872 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 00:47:07.872 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 00:47:07.872 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 00:47:07.872 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1      8000  
+2026.05.10 00:47:07.872 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 00:47:07.872 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                  8000  
+2026.05.10 00:47:07.872 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 00:47:07.938 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 00:47:07.943 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 00:47:07.944 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.000 s]
+2026.05.10 00:47:07.944 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.001 s]
+2026.05.10 00:47:07.944 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.001 s]
+2026.05.10 00:47:07.949 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 00:47:07.949 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 00:47:07.949 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 00:47:07.949 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1       416  
+2026.05.10 00:47:07.949 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 00:47:07.949 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                   416  
+2026.05.10 00:47:07.949 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 00:47:07.954 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 00:47:07.956 | laboneq.controller.controller                 | INFO   Disconnecting from all devices and servers...
+2026.05.10 00:47:07.956 | laboneq.controller.controller                 | INFO   Successfully disconnected from all devices and servers.
+2026.05.10 01:20:52.537 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /cluster/home/fiwagner/QHackathon/laboneq_output/log
+2026.05.10 01:20:52.540 | laboneq.controller.controller                 | INFO   VERSION: laboneq 26.4.0
+2026.05.10 01:20:52.541 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at localhost:8004
+2026.05.10 01:20:52.542 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 26.04.0.940 at localhost:8004
+2026.05.10 01:20:52.546 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2026.05.10 01:20:52.576 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2026.05.10 01:20:52.601 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:20:52.608 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.001 s]
+2026.05.10 01:20:52.629 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.021 s]
+2026.05.10 01:20:52.629 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.022 s]
+2026.05.10 01:20:52.639 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:20:52.639 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:20:52.639 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:20:52.639 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1      8000  
+2026.05.10 01:20:52.639 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:20:52.639 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                  8000  
+2026.05.10 01:20:52.639 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:20:52.685 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:20:52.690 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:20:52.690 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.000 s]
+2026.05.10 01:20:52.691 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.001 s]
+2026.05.10 01:20:52.691 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.001 s]
+2026.05.10 01:20:52.695 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:20:52.695 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:20:52.695 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:20:52.695 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1       416  
+2026.05.10 01:20:52.695 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:20:52.695 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                   416  
+2026.05.10 01:20:52.695 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:20:52.700 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:20:52.703 | laboneq.controller.controller                 | INFO   Disconnecting from all devices and servers...
+2026.05.10 01:20:52.703 | laboneq.controller.controller                 | INFO   Successfully disconnected from all devices and servers.
+2026.05.10 01:49:50.032 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /cluster/home/fiwagner/QHackathon/laboneq_output/log
+2026.05.10 01:49:50.036 | laboneq.controller.controller                 | INFO   VERSION: laboneq 26.4.0
+2026.05.10 01:49:50.038 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at localhost:8004
+2026.05.10 01:49:50.040 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 26.04.0.940 at localhost:8004
+2026.05.10 01:49:50.044 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2026.05.10 01:49:50.075 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2026.05.10 01:49:50.099 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:49:50.105 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.001 s]
+2026.05.10 01:49:50.120 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.015 s]
+2026.05.10 01:49:50.120 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.016 s]
+2026.05.10 01:49:50.131 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:49:50.131 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:49:50.132 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:49:50.132 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1      8000  
+2026.05.10 01:49:50.132 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:49:50.132 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                  8000  
+2026.05.10 01:49:50.132 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:49:50.165 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:49:50.170 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:49:50.171 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.000 s]
+2026.05.10 01:49:50.172 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.001 s]
+2026.05.10 01:49:50.172 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.001 s]
+2026.05.10 01:49:50.176 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:49:50.176 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:49:50.176 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:49:50.176 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1       416  
+2026.05.10 01:49:50.176 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:49:50.176 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                   416  
+2026.05.10 01:49:50.176 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:49:50.182 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:49:50.184 | laboneq.controller.controller                 | INFO   Disconnecting from all devices and servers...
+2026.05.10 01:49:50.185 | laboneq.controller.controller                 | INFO   Successfully disconnected from all devices and servers.
+2026.05.10 01:50:00.174 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /cluster/home/fiwagner/QHackathon/laboneq_output/log
+2026.05.10 01:50:00.176 | laboneq.controller.controller                 | INFO   VERSION: laboneq 26.4.0
+2026.05.10 01:50:00.178 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at localhost:8004
+2026.05.10 01:50:00.179 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 26.04.0.940 at localhost:8004
+2026.05.10 01:50:00.182 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2026.05.10 01:50:00.209 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2026.05.10 01:50:00.230 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:50:00.232 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.000 s]
+2026.05.10 01:50:00.239 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.007 s]
+2026.05.10 01:50:00.239 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.007 s]
+2026.05.10 01:50:00.247 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:00.247 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:50:00.247 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:00.247 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1      8000  
+2026.05.10 01:50:00.247 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:00.248 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                  8000  
+2026.05.10 01:50:00.248 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:00.257 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:50:00.260 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:50:00.261 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.000 s]
+2026.05.10 01:50:00.262 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.000 s]
+2026.05.10 01:50:00.262 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.001 s]
+2026.05.10 01:50:00.265 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:00.265 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:50:00.265 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:00.265 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1       416  
+2026.05.10 01:50:00.265 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:00.265 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                   416  
+2026.05.10 01:50:00.265 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:00.269 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:50:00.271 | laboneq.controller.controller                 | INFO   Disconnecting from all devices and servers...
+2026.05.10 01:50:00.271 | laboneq.controller.controller                 | INFO   Successfully disconnected from all devices and servers.
+2026.05.10 01:50:10.131 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /cluster/home/fiwagner/QHackathon/laboneq_output/log
+2026.05.10 01:50:10.134 | laboneq.controller.controller                 | INFO   VERSION: laboneq 26.4.0
+2026.05.10 01:50:10.135 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at localhost:8004
+2026.05.10 01:50:10.136 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 26.04.0.940 at localhost:8004
+2026.05.10 01:50:10.140 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2026.05.10 01:50:10.169 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2026.05.10 01:50:10.189 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:50:10.190 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.000 s]
+2026.05.10 01:50:10.197 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.008 s]
+2026.05.10 01:50:10.198 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.008 s]
+2026.05.10 01:50:10.204 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:10.205 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:50:10.205 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:10.205 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1      8000  
+2026.05.10 01:50:10.205 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:10.205 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                  8000  
+2026.05.10 01:50:10.205 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:10.214 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:50:10.218 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:50:10.218 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.000 s]
+2026.05.10 01:50:10.219 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.001 s]
+2026.05.10 01:50:10.219 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.001 s]
+2026.05.10 01:50:10.222 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:10.222 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:50:10.222 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:10.222 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1       416  
+2026.05.10 01:50:10.223 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:10.223 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                   416  
+2026.05.10 01:50:10.223 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:10.227 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:50:10.229 | laboneq.controller.controller                 | INFO   Disconnecting from all devices and servers...
+2026.05.10 01:50:10.229 | laboneq.controller.controller                 | INFO   Successfully disconnected from all devices and servers.
+2026.05.10 01:50:19.859 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /cluster/home/fiwagner/QHackathon/laboneq_output/log
+2026.05.10 01:50:19.861 | laboneq.controller.controller                 | INFO   VERSION: laboneq 26.4.0
+2026.05.10 01:50:19.863 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at localhost:8004
+2026.05.10 01:50:19.864 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 26.04.0.940 at localhost:8004
+2026.05.10 01:50:19.866 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2026.05.10 01:50:19.896 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2026.05.10 01:50:19.917 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:50:19.918 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.000 s]
+2026.05.10 01:50:19.925 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.006 s]
+2026.05.10 01:50:19.925 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.007 s]
+2026.05.10 01:50:19.932 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:19.932 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:50:19.932 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:19.932 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1      8000  
+2026.05.10 01:50:19.932 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:19.932 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                  8000  
+2026.05.10 01:50:19.932 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:19.940 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:50:19.944 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:50:19.945 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.000 s]
+2026.05.10 01:50:19.945 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.001 s]
+2026.05.10 01:50:19.946 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.001 s]
+2026.05.10 01:50:19.949 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:19.949 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:50:19.949 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:19.949 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1       416  
+2026.05.10 01:50:19.949 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:19.949 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                   416  
+2026.05.10 01:50:19.949 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:50:19.953 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:50:19.956 | laboneq.controller.controller                 | INFO   Disconnecting from all devices and servers...
+2026.05.10 01:50:19.956 | laboneq.controller.controller                 | INFO   Successfully disconnected from all devices and servers.
+2026.05.10 01:58:30.230 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /cluster/home/fiwagner/QHackathon/laboneq_output/log
+2026.05.10 01:58:30.233 | laboneq.controller.controller                 | INFO   VERSION: laboneq 26.4.0
+2026.05.10 01:58:30.234 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at localhost:8004
+2026.05.10 01:58:30.235 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 26.04.0.940 at localhost:8004
+2026.05.10 01:58:30.239 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2026.05.10 01:58:30.268 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2026.05.10 01:58:30.289 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:58:30.290 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.000 s]
+2026.05.10 01:58:30.297 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.007 s]
+2026.05.10 01:58:30.297 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.008 s]
+2026.05.10 01:58:30.305 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:30.306 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:58:30.306 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:30.306 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1      8000  
+2026.05.10 01:58:30.306 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:30.306 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                  8000  
+2026.05.10 01:58:30.306 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:30.316 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:58:30.320 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:58:30.321 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.000 s]
+2026.05.10 01:58:30.321 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.001 s]
+2026.05.10 01:58:30.321 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.001 s]
+2026.05.10 01:58:30.325 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:30.325 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:58:30.325 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:30.325 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1       416  
+2026.05.10 01:58:30.325 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:30.325 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                   416  
+2026.05.10 01:58:30.325 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:30.330 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:58:30.332 | laboneq.controller.controller                 | INFO   Disconnecting from all devices and servers...
+2026.05.10 01:58:30.332 | laboneq.controller.controller                 | INFO   Successfully disconnected from all devices and servers.
+2026.05.10 01:58:38.830 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /cluster/home/fiwagner/QHackathon/laboneq_output/log
+2026.05.10 01:58:38.832 | laboneq.controller.controller                 | INFO   VERSION: laboneq 26.4.0
+2026.05.10 01:58:38.833 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at localhost:8004
+2026.05.10 01:58:38.834 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 26.04.0.940 at localhost:8004
+2026.05.10 01:58:38.837 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2026.05.10 01:58:38.865 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2026.05.10 01:58:38.884 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:58:38.885 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.000 s]
+2026.05.10 01:58:38.891 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.006 s]
+2026.05.10 01:58:38.892 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.007 s]
+2026.05.10 01:58:38.898 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:38.898 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:58:38.898 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:38.898 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1      8000  
+2026.05.10 01:58:38.898 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:38.898 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                  8000  
+2026.05.10 01:58:38.898 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:38.906 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:58:38.910 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:58:38.910 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.000 s]
+2026.05.10 01:58:38.911 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.001 s]
+2026.05.10 01:58:38.911 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.001 s]
+2026.05.10 01:58:38.914 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:38.914 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:58:38.914 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:38.914 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1       416  
+2026.05.10 01:58:38.914 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:38.914 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                   416  
+2026.05.10 01:58:38.914 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:38.919 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:58:38.920 | laboneq.controller.controller                 | INFO   Disconnecting from all devices and servers...
+2026.05.10 01:58:38.921 | laboneq.controller.controller                 | INFO   Successfully disconnected from all devices and servers.
+2026.05.10 01:58:47.414 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /cluster/home/fiwagner/QHackathon/laboneq_output/log
+2026.05.10 01:58:47.416 | laboneq.controller.controller                 | INFO   VERSION: laboneq 26.4.0
+2026.05.10 01:58:47.417 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at localhost:8004
+2026.05.10 01:58:47.418 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 26.04.0.940 at localhost:8004
+2026.05.10 01:58:47.421 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2026.05.10 01:58:47.450 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2026.05.10 01:58:47.467 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:58:47.468 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.000 s]
+2026.05.10 01:58:47.474 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.006 s]
+2026.05.10 01:58:47.474 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.006 s]
+2026.05.10 01:58:47.481 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:47.481 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:58:47.481 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:47.481 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1      8000  
+2026.05.10 01:58:47.481 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:47.481 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                  8000  
+2026.05.10 01:58:47.481 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:47.489 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:58:47.492 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:58:47.493 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.000 s]
+2026.05.10 01:58:47.493 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.000 s]
+2026.05.10 01:58:47.493 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.001 s]
+2026.05.10 01:58:47.496 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:47.496 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:58:47.496 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:47.496 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1       416  
+2026.05.10 01:58:47.496 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:47.496 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                   416  
+2026.05.10 01:58:47.496 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:47.500 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:58:47.501 | laboneq.controller.controller                 | INFO   Disconnecting from all devices and servers...
+2026.05.10 01:58:47.502 | laboneq.controller.controller                 | INFO   Successfully disconnected from all devices and servers.
+2026.05.10 01:58:56.638 | laboneq.laboneq_logging                       | INFO   Logging initialized from [Default inline config in laboneq.laboneq_logging] logdir is /cluster/home/fiwagner/QHackathon/laboneq_output/log
+2026.05.10 01:58:56.639 | laboneq.controller.controller                 | INFO   VERSION: laboneq 26.4.0
+2026.05.10 01:58:56.640 | laboneq.controller.devices.device_collection  | INFO   Connecting to data server at localhost:8004
+2026.05.10 01:58:56.641 | laboneq.controller.devices.async_support      | INFO   Connected to Zurich Instruments LabOne Data Server version 26.04.0.940 at localhost:8004
+2026.05.10 01:58:56.644 | laboneq.controller.devices.device_collection  | INFO   Configuring the device setup
+2026.05.10 01:58:56.671 | laboneq.controller.devices.device_collection  | INFO   The device setup is configured
+2026.05.10 01:58:56.690 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:58:56.691 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.000 s]
+2026.05.10 01:58:56.698 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.007 s]
+2026.05.10 01:58:56.698 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.008 s]
+2026.05.10 01:58:56.705 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:56.705 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:58:56.705 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:56.705 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1      8000  
+2026.05.10 01:58:56.705 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:56.705 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                  8000  
+2026.05.10 01:58:56.705 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:56.714 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:58:56.718 | laboneq.compiler.workflow.compiler            | INFO   Starting LabOne Q Compiler run...
+2026.05.10 01:58:56.718 | laboneq.compiler.workflow.realtime_compiler   | INFO   Schedule completed. [0.000 s]
+2026.05.10 01:58:56.719 | laboneq.compiler.workflow.realtime_compiler   | INFO   Code generation completed for all AWGs. [0.001 s]
+2026.05.10 01:58:56.719 | laboneq.compiler.workflow.neartime_execution  | INFO   Completed compilation step 1 of 1. [0.001 s]
+2026.05.10 01:58:56.722 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:56.722 | laboneq.compiler.workflow.reporter            | INFO     Device       AWG   SeqC LOC   CT entries   Waveforms   Samples  
+2026.05.10 01:58:56.722 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:56.722 | laboneq.compiler.workflow.reporter            | INFO     shfqc_0_sg     0          9            2           1       416  
+2026.05.10 01:58:56.722 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:56.722 | laboneq.compiler.workflow.reporter            | INFO     TOTAL                     9            2                   416  
+2026.05.10 01:58:56.722 | laboneq.compiler.workflow.reporter            | INFO    ──────────────────────────────────────────────────────────────── 
+2026.05.10 01:58:56.727 | laboneq.compiler.workflow.compiler            | INFO   Finished LabOne Q Compiler run.
+2026.05.10 01:58:56.729 | laboneq.controller.controller                 | INFO   Disconnecting from all devices and servers...
+2026.05.10 01:58:56.729 | laboneq.controller.controller                 | INFO   Successfully disconnected from all devices and servers.

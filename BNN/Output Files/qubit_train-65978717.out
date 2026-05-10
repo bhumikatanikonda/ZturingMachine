@@ -1,0 +1,93 @@
+Job started: Sun May 10 01:01:22 AM CEST 2026
+Running on node: eu-a2p-341
+CPUs allocated: 8
+Starting ensemble training...
+Loading dataset_10k.npz ...
+  features: (10000, 45), labels: (10000, 4)
+  split: 8000 train / 1000 val / 1000 test
+  device: cpu
+
+=== Member 1/5 ===
+    epoch  10  val NLL = -0.0623  (best -0.0623)
+    epoch  20  val NLL = -0.0667  (best -0.1182)
+    epoch  30  val NLL = -0.1714  (best -0.1939)
+    epoch  40  val NLL = -0.1827  (best -0.2439)
+    epoch  50  val NLL = -0.2430  (best -0.2781)
+    epoch  60  val NLL = -0.2830  (best -0.2890)
+    epoch  70  val NLL = -0.2873  (best -0.3164)
+    epoch  80  val NLL = -0.2460  (best -0.3164)
+    early stop @ epoch 89  (best val NLL = -0.3164)
+
+=== Member 2/5 ===
+    epoch  10  val NLL = 0.0052  (best -0.0119)
+    epoch  20  val NLL = -0.1398  (best -0.1490)
+    epoch  30  val NLL = -0.1737  (best -0.1884)
+    epoch  40  val NLL = -0.2526  (best -0.2526)
+    epoch  50  val NLL = -0.2158  (best -0.2775)
+    epoch  60  val NLL = -0.2749  (best -0.2855)
+    epoch  70  val NLL = -0.2764  (best -0.2869)
+    epoch  80  val NLL = -0.2748  (best -0.2959)
+    epoch  90  val NLL = -0.1930  (best -0.2959)
+    epoch 100  val NLL = -0.0746  (best -0.2959)
+    early stop @ epoch 104  (best val NLL = -0.2959)
+
+=== Member 3/5 ===
+    epoch  10  val NLL = -0.0265  (best -0.0265)
+    epoch  20  val NLL = -0.1256  (best -0.1256)
+    epoch  30  val NLL = -0.1662  (best -0.2070)
+    epoch  40  val NLL = -0.1610  (best -0.2284)
+    epoch  50  val NLL = -0.2175  (best -0.2740)
+    epoch  60  val NLL = -0.2886  (best -0.2886)
+    epoch  70  val NLL = -0.1936  (best -0.2886)
+    epoch  80  val NLL = -0.2530  (best -0.2886)
+    early stop @ epoch 85  (best val NLL = -0.2886)
+
+=== Member 4/5 ===
+    epoch  10  val NLL = -0.0801  (best -0.0801)
+    epoch  20  val NLL = -0.1186  (best -0.1269)
+    epoch  30  val NLL = -0.1988  (best -0.2052)
+    epoch  40  val NLL = -0.2052  (best -0.2457)
+    epoch  50  val NLL = -0.2335  (best -0.2954)
+    epoch  60  val NLL = -0.2508  (best -0.2955)
+    epoch  70  val NLL = -0.1187  (best -0.3122)
+    epoch  80  val NLL = -0.0751  (best -0.3122)
+    early stop @ epoch 88  (best val NLL = -0.3122)
+
+=== Member 5/5 ===
+    epoch  10  val NLL = -0.0381  (best -0.0395)
+    epoch  20  val NLL = -0.1451  (best -0.1451)
+    epoch  30  val NLL = -0.1663  (best -0.1879)
+    epoch  40  val NLL = -0.2109  (best -0.2310)
+    epoch  50  val NLL = -0.2376  (best -0.2795)
+    epoch  60  val NLL = -0.2766  (best -0.2850)
+    epoch  70  val NLL = -0.2273  (best -0.3052)
+    epoch  80  val NLL = -0.2335  (best -0.3216)
+    epoch  90  val NLL = -0.1563  (best -0.3216)
+    early stop @ epoch 99  (best val NLL = -0.3216)
+
+======================================================================
+  Test-set evaluation  (mixture-of-Gaussians ensemble)
+======================================================================
+  Param              MAE          RMSE   cov(1σ)   cov(2σ)
+  --------                                                
+  f_q         0.0436 GHz    0.0928 GHz    72.3%    98.5%
+  T1          0.0000 µs    0.0000 µs    61.7%    97.6%
+  T2          0.0000 µs    0.0000 µs    55.6%    99.1%
+  amp_pi      0.0217  -     0.0283  -     63.4%    95.6%
+
+  Calibration warnings:
+  [WARN] T2: 1σ coverage 55.6% (target 68%)
+  (Re-fit with more training data, more ensemble members, or longer training to improve calibration.)
+======================================================================
+
+Saved 5 members + norm_stats + sweep_grids to models_10k
+Training finished: Sun May 10 01:05:00 AM CEST 2026
+SUCCESS: models_10k/ created
+total 3.6M
+-rw-r--r-- 1 fiwagner fiwagner-group 707K May 10 01:02 member_0.pt
+-rw-r--r-- 1 fiwagner fiwagner-group 707K May 10 01:02 member_1.pt
+-rw-r--r-- 1 fiwagner fiwagner-group 707K May 10 01:03 member_2.pt
+-rw-r--r-- 1 fiwagner fiwagner-group 707K May 10 01:04 member_3.pt
+-rw-r--r-- 1 fiwagner fiwagner-group 707K May 10 01:04 member_4.pt
+-rw-r--r-- 1 fiwagner fiwagner-group  81K May 10 01:05 norm_stats.npz
+-rw-r--r-- 1 fiwagner fiwagner-group 2.7K May 10 01:05 sweep_grids.npz
