@@ -35,7 +35,7 @@ your_project/
 
 ## How to run
 
-Open the notebook and **run all cells in order** from top to bottom. Each step depends on results from the previous one — do not skip or reorder cells.
+Open the notebook and **run all cells in order from preparatory tasks.ipynb** from top to bottom. Each step depends on results from the previous one — do not skip or reorder cells.
 
 ```
 Kernel → Restart & Run All
