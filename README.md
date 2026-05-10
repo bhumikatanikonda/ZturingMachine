@@ -266,3 +266,155 @@ For a hackathon demo, *20 qubits × 5 repeats = 100 tune-ups (~30–50 min)* is 
 •⁠  ⁠The orchestrator never crashes mid-pipeline. If a fit fails, the failure is logged in ⁠ failures ⁠ and the policy decides whether to retry with widened parameters or move on. Worst-case outcome is ⁠ status="partial" ⁠ with NaN for unmeasured parameters.
 •⁠  ⁠Each worker rebuilds its own LabOne Q session via ⁠ make_session() ⁠. Session creation takes ~1 s, so it's cheap relative to a tune-up.
 •⁠  ⁠Reproducibility: ⁠ qubit_factory(qid, repeat) ⁠ seeds ⁠ VirtualQubit(seed=10000*qid + repeat) ⁠, so the campaign is deterministic given the same seeds. Re-run with the same flags to reproduce results bit-for-bit.
+
+####################################
+# EXPLANATION OF THE CODE CONTENTS #
+####################################
+
+# Bayesian Neural Networks for 80% Efficiency Gains in Quantum Calibration
+
+This repository contains a full pipeline for characterizing superconducting qubits using a Deep Ensemble of Neural Networks. By leveraging physics-informed sampling and Bayesian uncertainty quantification, we reduce the measurement overhead from 244 points to only 55 points per qubit.
+
+---
+
+## Project Structure
+
+| File | Description |
+| :--- | :--- |
+| qubit.py | The simulator core. Contains the VirtualQubit class (QuTiP-based). |
+| qubit_measurements.py | Measurement primitives (Spec, Rabi, T1, Ramsey) and sparse grid definitions. |
+| generate_dataset.py | Multiprocessing script to generate thousands of simulated qubit datasets. |
+| train_ensemble.py | Training script for the 5-member Gaussian MLP ensemble. |
+| infer_qubit.py | Inference script for characterizing a new qubit and estimating uncertainty. |
+| setup_euler.sh | Shell script to set up the Python environment on the ETH Euler Cluster. |
+| generate_euler.sh | Slurm script to run massive dataset generation on Euler. |
+| train_euler.sh | Slurm script for ensemble training on Euler. |
+
+---
+
+## Getting Started
+
+### 1. Environment Setup
+To run this on the ETH Euler Cluster (or a local Linux machine), initialize the environment:
+$ bash setup_euler.sh
+
+This creates a virtual environment 'qubit_env' and installs torch, qutip, laboneq, and numpy.
+
+---
+
+## Step-by-Step Workflow
+
+### Phase 1: Dataset Generation
+We generate a supervised dataset of (P1 features, hidden parameters) pairs. The features consist of concatenated results from 4 measurement sweeps: Spectroscopy, Rabi, T1, and Ramsey.
+
+* Local Generation:
+  $ python generate_dataset.py --n-qubits 2000 --workers 8 --out dataset.npz
+
+* Euler Cluster (10k Qubits):
+  $ sbatch generate_euler.sh
+  (Note: This script uses 56 workers to simulate 10,000 qubits in parallel to avoid CPU thrashing.)
+
+---
+
+### Phase 2: Training the BNN
+The model is a Deep Ensemble of 5 MLPs. Each member predicts a Gaussian distribution (Mean mu and Log-Variance sigma^2) for the four physical parameters (fq, T1, T2, amp_pi).
+
+* Start Training:
+  $ sbatch train_euler.sh
+
+* Architecture Details:
+  - Input: Concatenated P1 vectors (55 features).
+  - Architecture: 4-layer MLP with LayerNorm and SiLU activations.
+  - Loss: Gaussian Negative Log-Likelihood (NLL) to ensure calibrated uncertainty.
+
+---
+
+### Phase 3: Inference & Characterization
+Once the model is trained, you can characterize a "new" (unseen) qubit. The BNN provides a point estimate and a Confidence Interval.
+
+* Test on a Seeded Virtual Qubit:
+  $ python infer_qubit.py --model-dir models_10k_v2 --seed 12345
+
+* Run on Real Measurement Data:
+  $ python infer_qubit.py --model-dir models_10k_v2 --features-file my_qubit_data.npy
+
+---
+
+## Understanding the Output
+
+The inference script outputs a summary table with two types of uncertainty:
+1. Aleatoric Uncertainty: Intrinsic noise from the measurement process (shot noise).
+2. Epistemic Uncertainty: The "disagreement" between ensemble members, indicating how much the model trusts its own prediction.
+
+### The Flag System
+* SUCCESS: If relative uncertainty sigma/|mu| <= 5%, the prediction is highly reliable.
+* [FLAG]: If uncertainty > 5%, the model automatically recommends a Full Sweep, as the qubit parameters likely fall outside the learned distribution.
+
+---
+
+## Physics-Informed Sampling
+Our 80% efficiency gain is driven by the smart grids defined in qubit_measurements.py:
+* Spectroscopy: 15 points linear. The network learns to interpolate the Lorentzian peak from the slopes.
+* Rabi: 10 points linear.
+* T1 & T2: 10 points Log-spaced (Geometric). This places more samples where the exponential decay is steepest, maximizing information per shot.
+
+#################################
+# EXECUTION GUIDE FOR THE CODES #
+#################################
+
+This document provides the exact commands required to run the various stages of the qubit characterization pipeline on a Cluster (may adapt the type of node).
+
+---
+
+## 1. Environment Setup
+Run this once to create the virtual environment and install all dependencies.
+$ bash setup_euler.sh
+
+---
+
+## 2. Dataset Generation
+Generates a supervised dataset (features and labels) for training.
+
+# On a local machine (e.g., 2000 qubits, 8 workers):
+$ python generate_dataset.py --n-qubits 2000 --workers 8 --out dataset.npz
+
+# On the Euler Cluster (10,000 qubits, 56 workers via Slurm):
+$ sbatch generate_euler.sh
+
+---
+
+## 3. Model Training
+Trains a Deep Ensemble of 5 MLPs using the generated dataset.
+
+# To start training:
+$ sbatch train_euler.sh
+
+# To check training progress:
+$ tail -f qubit_train-[JOB_ID].out
+
+---
+
+## 4. Inference (Characterization)
+Uses the trained models to characterize a specific qubit and estimate uncertainty.
+
+# Option A: Test on a specific VirtualQubit seed (e.g., seed 10001):
+$ python infer_qubit.py --model-dir models_10k_v2 --seed 10001
+
+# Option B: Run on a pre-measured feature file (.npy):
+$ python infer_qubit.py --model-dir models_10k_v2 --features-file features.npy
+
+# Option C: Run a batch of seeds using the Slurm script:
+$ sbatch run_inference.sh
+
+---
+
+## 5. Monitoring & Maintenance
+# View your active Slurm jobs:
+$ squeue -u $USER
+
+# Cancel a specific job:
+$ scancel [JOB_ID]
+
+# Verify the Python environment is active:
+$ which python
+# Expected: /cluster/home/[USER]/qubit_env/bin/python
