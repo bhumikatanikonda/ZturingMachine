@@ -195,7 +195,9 @@ session.connect(do_emulation=False)
 
 and ensure the device serials in `generate_device_setup_qubits()` match your physical setup.
 
+## ============================================================
 ## AUTOMATION PART (BETA)
+## ============================================================
 ## Running the automation campaign
 
 The ⁠ automation/ ⁠ package wires your tune-up into a closed-loop orchestrator that runs many qubits in sequence with adaptive retries on failure. No API keys required.
@@ -268,7 +270,7 @@ For a hackathon demo, *20 qubits × 5 repeats = 100 tune-ups (~30–50 min)* is 
 •⁠  ⁠Reproducibility: ⁠ qubit_factory(qid, repeat) ⁠ seeds ⁠ VirtualQubit(seed=10000*qid + repeat) ⁠, so the campaign is deterministic given the same seeds. Re-run with the same flags to reproduce results bit-for-bit.
 
 ####################################
-# EXPLANATION OF THE CODE CONTENTS #
+# CNN MODULE #
 ####################################
 
 # Bayesian Neural Networks for 80% Efficiency Gains in Quantum Calibration
